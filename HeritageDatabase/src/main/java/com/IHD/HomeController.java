@@ -1,17 +1,10 @@
 package com.IHD;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.context.annotation.ComponentScan;
 
-@Controller
+@ComponentScan("/index.html")
 public class HomeController {
 	
-	@RequestMapping("home")
-	@ResponseBody
-	public String home() {
-		System.out.println("hi");
-		return "home.html";
-	}
+
 	
 }
